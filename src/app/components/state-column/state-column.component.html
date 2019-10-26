@@ -1,0 +1,8 @@
+<div class='state' [ngStyle]='{"background-color":state.color}'>
+  <div class='state-title' draggable>{{state.name}}</div>
+  <div class='state-body'>
+    <div draggable *ngFor='let ticket of state.tickets' [dragData]='ticket'>
+      <app-ticket [ticket]='ticket'></app-ticket>
+    </div>
+  </div>
+</div>

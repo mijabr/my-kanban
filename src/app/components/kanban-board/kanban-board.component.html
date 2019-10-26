@@ -1,0 +1,3 @@
+<div class='state-container'>
+  <app-state-column *ngFor='let state of kanban.states' [state]='state' droppable (onDrop)='onDrop(state, $event)'></app-state-column>
+</div>
